@@ -1,0 +1,162 @@
+  /* Reset mặc định */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    width: 1080px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  /* Cột bên trái */
+  .left {
+    flex: 1;
+    background: url("./img/image.jpg") no-repeat center center/cover;
+    position: relative;
+  }
+
+  .left .overlay {
+    background-color: rgba(0, 72, 255, 0.7);
+    color: #fff;
+    height: 100%;
+    padding: 40px 30px;
+    line-height: 1.5;
+  }
+
+  .left .text {
+    line-height: 2.5;
+  }
+
+  .logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  /* Cột bên phải */
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .language {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  img {
+    width: 20px;
+    height: auto;
+  }
+
+  .form-comp {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: black 1px solid;
+    margin: 30px 0;
+  }
+
+  .forgot {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    align-self: flex-end;
+    text-align: right; /* Đảm bảo căn phải */
+    margin-top: 10px;
+  }
+
+  .form button {
+    width: 100%; /* Đặt chiều rộng của nút bằng 100% chiều rộng của phần tử chứa nó */
+    padding: 10px;
+    color: #007bff;
+    background-color: inherit;
+    margin-top: 50px;
+    border: #007bff 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .separator::before,
+  .separator::after {
+    content: "";
+    flex-grow: 1;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+  }
+
+  .separator span {
+    font-size: 16px;
+    color: #666;
+    padding: 0 10px;
+  }
+
+  .lform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .other {
+    display: block;
+  }
+  .other button {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center;
+    margin: 5px 0;
+    width: 100%; /* Đặt chiều rộng của nút bằng 100% chiều rộng của phần tử chứa nó */
+    padding: 10px;
+    color: #acadae;
+    background-color: inherit;
+    border: #acadae 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .other button img {
+    margin-right: 10px;
+  }
+
+  .form-comp label {
+    font-size: small;
+    color: #acadae;
+  }
+
+  .form-comp input {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    font-size: larger;
+  }
+  input:not(:placeholder-shown) {
+    background-color: #f0f8ff; /* Màu nền khi có chữ */
+  }
